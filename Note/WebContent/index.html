@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Camera is a Pixedelic free jQuery slideshow | Manuel Masia (designer and developer) --> 
+<html> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+    <title>QJGENG的小站</title> 
+    <meta name="description" content="Camera a free jQuery slideshow with many effects, transitions, adaptive layout, easy to customize, using canvas and mobile ready"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //		Styles
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    <link rel='stylesheet' id='camera-css'  href='photo/css/camera.css' type='text/css' media='all'> 
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: orange;
+		}
+		a {
+			color: #09f;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		#back_to_camera {
+			clear: both;
+			display: block;
+			height: 80px;
+			line-height: 40px;
+			padding: 20px;
+		}
+		.fluid_container {
+			margin: 0 auto;
+			max-width: 950px;
+			width: 100%;
+			margin-top:30px;
+		}
+		
+		.clickable {
+			cursor: pointer;
+			z-index: 9999
+		}
+	</style>
+
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //		Scripts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    
+    <script type='text/javascript' src='photo/scripts/jquery.min.js'></script>
+    <script type='text/javascript' src='photo/scripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='photo/scripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='photo/scripts/camera.js'></script> 
+    
+    <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_1').camera({
+				thumbnails: false,
+				clickable: true,
+				playPause: false
+			});									
+		});
+
+	</script>
+ 
+</head>
+<body>
+	<div class="fluid_container">    	
+    	<iframe allowtransparency="true" style="background-color:white;opacity:0.9"name="alimamaifrm" frameborder="0" marginheight="0" marginwidth="0" border="0" scrolling="no" width="950" height="30" src="http://www.taobao.com/go/app/tbk_app/chongzhi_950_30.php?pid=mm_48618992_4348102_14614238&page=chongzhi_950_30.php&size_w=950&size_h=30&stru_phone=1&stru_game=1&stru_travel=1" ></iframe>
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-src="photo/images/slides/shopping.jpg">
+                <div class="camera_caption fadeFromBottom" href='shopping.html'>
+                   	购物    	
+                </div>
+            </div>
+            <div data-src="photo/images/slides/note.jpg">
+                <div class="camera_caption fadeFromBottom" href='noteList.html'>
+                                               笔记
+                </div>
+            </div>
+            <div data-src="photoShow/images/photoShow.jpg">
+                <div class="camera_caption fadeFromBottom" href='photoShow/index.html'>
+                	相簿                        
+                </div>
+            </div>
+            <div data-src="photo/images/slides/shelter.jpg">
+                <div class="camera_caption fadeFromBottom" href='waterfall/index.html'>
+                	照片墙
+                </div>
+            </div>
+        </div><!-- #camera_wrap_1 -->
+
+    </div><!-- .fluid_container -->
+</body> 
+</html>

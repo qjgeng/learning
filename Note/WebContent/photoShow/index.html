@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>照片墙</title>
+<link rel="stylesheet" href="css/zzsc.css" type="text/css"/>
+<script type="text/javascript" src="js/zzsc.js"></script>
+<script type="text/javascript">
+	function jump(url) {
+		window.location = url;
+	}
+	
+	function changeCursor(obj) {
+		obj.style.cursor = 'pointer';
+		
+	}
+</script>
+<style type="text/css">
+.logo {
+	margin-bottom: 25px;
+	z-index: 999;
+	opacity: 0.5;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="logo" style=""><img alt="" src="../photo/images/logo/logo.gif" style="width:122px;height:45px;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;" onclick="jump('../index.html')" onmouseover="changeCursor(this)"/></div>
+<div id="bigshow">	
+	<img id="imgShow" style="width:800px;height:530px;"src="">
+</div>
+<ul id="pic">
+	<li class="images"><img src="images/small/01.jpg" width='200' height='132' /></li>
+	<li class="images"><img src="images/small/02.jpg" width='200' height='132'/></li>
+	<li class="images"><img src="images/small/03.jpg" width='200' height='132'/></li>
+	<li class="images"><img src="images/small/04.jpg" width='200' height='132'/></li>
+	<li class="images"><img src="images/small/05.jpg" width='200' height='132'/></li>
+	<li class="images"><img src="images/small/06.jpg" width='200' height='132'/></li>
+</ul>
+</body>
+</html>
